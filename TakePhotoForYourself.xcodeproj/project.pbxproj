@@ -15,6 +15,8 @@
 		5DD093AD1EA705F600069CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD093AB1EA705F600069CBE /* LaunchScreen.storyboard */; };
 		5DD093B81EA705F600069CBE /* TakePhotoForYourselfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD093B71EA705F600069CBE /* TakePhotoForYourselfTests.m */; };
 		5DD093C31EA705F600069CBE /* TakePhotoForYourselfUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD093C21EA705F600069CBE /* TakePhotoForYourselfUITests.m */; };
+		5DD093D41EA7065900069CBE /* TakePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD093D11EA7065900069CBE /* TakePictureView.m */; };
+		5DD093D51EA7065900069CBE /* UIImage+ChangeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD093D31EA7065900069CBE /* UIImage+ChangeImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		5DD093BE1EA705F600069CBE /* TakePhotoForYourselfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakePhotoForYourselfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD093C21EA705F600069CBE /* TakePhotoForYourselfUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TakePhotoForYourselfUITests.m; sourceTree = "<group>"; };
 		5DD093C41EA705F600069CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD093D01EA7065900069CBE /* TakePictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePictureView.h; sourceTree = "<group>"; };
+		5DD093D11EA7065900069CBE /* TakePictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePictureView.m; sourceTree = "<group>"; };
+		5DD093D21EA7065900069CBE /* UIImage+ChangeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ChangeImage.h"; sourceTree = "<group>"; };
+		5DD093D31EA7065900069CBE /* UIImage+ChangeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ChangeImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				5DD093A11EA705F600069CBE /* AppDelegate.m */,
 				5DD093A31EA705F600069CBE /* ViewController.h */,
 				5DD093A41EA705F600069CBE /* ViewController.m */,
+				5DD093D01EA7065900069CBE /* TakePictureView.h */,
+				5DD093D11EA7065900069CBE /* TakePictureView.m */,
+				5DD093D21EA7065900069CBE /* UIImage+ChangeImage.h */,
+				5DD093D31EA7065900069CBE /* UIImage+ChangeImage.m */,
 				5DD093A61EA705F600069CBE /* Main.storyboard */,
 				5DD093A91EA705F600069CBE /* Assets.xcassets */,
 				5DD093AB1EA705F600069CBE /* LaunchScreen.storyboard */,
@@ -276,9 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD093D41EA7065900069CBE /* TakePictureView.m in Sources */,
 				5DD093A51EA705F600069CBE /* ViewController.m in Sources */,
 				5DD093A21EA705F600069CBE /* AppDelegate.m in Sources */,
 				5DD0939F1EA705F600069CBE /* main.m in Sources */,
+				5DD093D51EA7065900069CBE /* UIImage+ChangeImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +367,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WEI SHI (RKN4Q4GVEY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: WEI SHI (RKN4Q4GVEY)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -374,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +417,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WEI SHI (RKN4Q4GVEY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: WEI SHI (RKN4Q4GVEY)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -417,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -429,11 +443,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RKN4Q4GVEY;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TakePhotoForYourself/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zqy.TakePhotoForYourself;
+				PRODUCT_BUNDLE_IDENTIFIER = com.topfine.cameraapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,11 +460,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RKN4Q4GVEY;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TakePhotoForYourself/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zqy.TakePhotoForYourself;
+				PRODUCT_BUNDLE_IDENTIFIER = com.topfine.cameraapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -518,6 +542,7 @@
 				5DD093C91EA705F600069CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DD093CA1EA705F600069CBE /* Build configuration list for PBXNativeTarget "TakePhotoForYourselfTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +551,7 @@
 				5DD093CC1EA705F600069CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DD093CD1EA705F600069CBE /* Build configuration list for PBXNativeTarget "TakePhotoForYourselfUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +560,7 @@
 				5DD093CF1EA705F600069CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
